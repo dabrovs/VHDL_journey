@@ -1,0 +1,20 @@
+# ** Note: i: 0  // Binary IN: 0000  // Segment OUT: 00111111
+#    Time: 10 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 1  // Binary IN: 0001  // Segment OUT: 00000110
+#    Time: 30 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 2  // Binary IN: 0010  // Segment OUT: 01011011
+#    Time: 50 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 3  // Binary IN: 0011  // Segment OUT: 01001111
+#    Time: 70 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 4  // Binary IN: 0100  // Segment OUT: 01100110
+#    Time: 90 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 5  // Binary IN: 0101  // Segment OUT: 01101101
+#    Time: 110 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 6  // Binary IN: 0110  // Segment OUT: 01111101
+#    Time: 130 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 7  // Binary IN: 0111  // Segment OUT: 00000111
+#    Time: 150 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 8  // Binary IN: 1000  // Segment OUT: 01111111
+#    Time: 170 ns  Iteration: 0  Instance: /dip_to_binary_tb
+# ** Note: i: 9  // Binary IN: 1001  // Segment OUT: 01101111
+#    Time: 190 ns  Iteration: 0  Instance: /dip_to_binary_tb

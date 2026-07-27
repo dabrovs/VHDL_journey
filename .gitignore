@@ -1,0 +1,33 @@
+# ==============================================================================
+# QUARTUS ALLOWLIST: Ignore everything by default, only save essential source files
+# ==============================================================================
+
+# 1. Ignore absolutely everything by default
+*
+
+# 2. Allow Git to traverse into subdirectories to find your code
+!*/
+
+# 3. Allow essential Quartus project configuration files
+!*.qpf
+!*.qsf
+!*.sdc
+
+# 4. Allow VHDL source code and testbenches
+!*.vhd
+!*.vhdl
+
+# 5. Allow documentation, text files, and Git rules
+!*.md
+!*.txt
+!.gitignore
+!*.pdf
+
+# ==============================================================================
+# HARD BLACKLIST: Never track anything inside these Quartus/Questa build folders!
+# (Placed at the BOTTOM so they permanently override any allowlist rules above)
+# ==============================================================================
+db/
+incremental_db/
+output_files/
+simulation/
