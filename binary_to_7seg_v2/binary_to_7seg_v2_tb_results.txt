@@ -1,0 +1,114 @@
+#  -------- Start of test sequence -------- 
+# Counting clk signals for input: 0
+# Binary input as int is: 0 --  as binary: 0000
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10010010
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 1
+# Binary input as int is: 1 --  as binary: 0001
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10011001
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 2
+# Binary input as int is: 2 --  as binary: 0010
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10110000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 3
+# Binary input as int is: 3 --  as binary: 0011
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10100100
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 4
+# Binary input as int is: 4 --  as binary: 0100
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 11111001
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 5
+# Binary input as int is: 5 --  as binary: 0101
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11111001
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 11000000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 6
+# Binary input as int is: 6 --  as binary: 0110
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10010000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 7
+# Binary input as int is: 7 --  as binary: 0111
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10000000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 8
+# Binary input as int is: 8 --  as binary: 1000
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 11111000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 9
+# Binary input as int is: 9 --  as binary: 1001
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10000010
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 10
+# Binary input as int is: 10 --  as binary: 1010
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10010010
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 11
+# Binary input as int is: 11 --  as binary: 1011
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10011001
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 12
+# Binary input as int is: 12 --  as binary: 1100
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10110000
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 13
+# Binary input as int is: 13 --  as binary: 1101
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 10100100
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 14
+# Binary input as int is: 14 --  as binary: 1110
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 11111001
+#  ---- Increasing binary input to display next number ---- 
+# Counting clk signals for input: 15
+# Binary input as int is: 15 --  as binary: 1111
+# clk_cnt is: 10000000000000000 Next clk signal toggels smgt_select. Seven segment select bitstring is: 1101
+# Bit-string for digit one is: 11000000
+# clk_cnt is: 00000000000000000 Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: 1110
+# Bit-string for digit zero is: 11000000
+#  ---- Increasing binary input to display next number ---- 
+# Testing done - stop simulation
