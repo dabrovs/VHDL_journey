@@ -26,7 +26,7 @@ ARCHITECTURE behavior OF binary_to_7seg_v2_tb IS
 	
 	SIGNAL sgmt_select_out	:	STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '0');
 	SIGNAL seven_sgmt_out 	:	STD_LOGIC_VECTOR(7 DOWNTO 0) := (others => '0');
-	SIGNAL binary_in			:	STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '0');
+	SIGNAL binary_in			:	STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '1');
 	SIGNAL clk_in				:	STD_LOGIC := '0';
 	
 	TYPE Steps IS (INIT, CNT_UP, INC_BIN_CODE, DONE);
@@ -67,6 +67,8 @@ ARCHITECTURE behavior OF binary_to_7seg_v2_tb IS
 						IF first_time THEN
 							write(l, STRING'(" -------- Start of test sequence -------- "));
 							writeline(OUTPUT, l);
+							write(l, STRING'(" Bit strings are negated as the dev. boards IO's are NC"));
+							writeline(OUTPUT, l);
 							first_Time := FALSE;
 						END IF;
 					
@@ -95,21 +97,21 @@ ARCHITECTURE behavior OF binary_to_7seg_v2_tb IS
 						
 						IF (clk_cnt = 65536) THEN -- One count before multiplexing
 							-- Current binary input
-							write(l, STRING'("Binary input as int is: " & TO_STRING(binary_in_int) & " -- " & " as binary: " & TO_STRING(binary_in)));
+							write(l, STRING'("Binary input as int is: " & TO_STRING(binary_in_int) & " -- " & " as binary (neg): " & TO_STRING(NOT binary_in)));
 							writeline(OUTPUT, l);
 							-- Current segment select
-							write(l, STRING'("clk_cnt is: " & TO_STRING(clk_cnt) & " Next clk signal toggels smgt_select. Seven segment select bitstring is: " & TO_STRING(sgmt_select_out)));
+							write(l, STRING'("clk_cnt is: " & TO_STRING(clk_cnt) & " Next clk signal toggels smgt_select. Seven segment select bitstring is (neg): " & TO_STRING( NOT sgmt_select_out)));
 							writeline(OUTPUT, l);
 							-- Current bit-string for the digit
-							write(l, STRING'("Bit-string for digit one is: " & TO_STRING(seven_sgmt_out)));
+							write(l, STRING'("Bit-string for digit one is (neg): " & TO_STRING(NOT seven_sgmt_out)));
 							writeline(OUTPUT, l);
 							
 						ELSIF (clk_cnt = 0) AND NOT first_time THEN -- Multiplexing is done
 							-- Current segment select
-							write(l, STRING'("clk_cnt is: " & TO_STRING(clk_cnt) & " Counter overflow -> smgt_select was toggled. Seven segment select bitstring is: " & TO_STRING(sgmt_select_out)));
+							write(l, STRING'("clk_cnt is: " & TO_STRING(clk_cnt) & " Counter overflow -> smgt_select was toggled. Seven segment select bitstring is (neg): " & TO_STRING(NOT sgmt_select_out)));
 							writeline(OUTPUT, l);
 							-- Current bit-string for the digit
-							write(l, STRING'("Bit-string for digit zero is: " & TO_STRING(seven_sgmt_out)));
+							write(l, STRING'("Bit-string for digit zero is (neg): " & TO_STRING(NOT seven_sgmt_out)));
 							writeline(OUTPUT, l);
 							
 							mltplx_done := TRUE;
@@ -138,7 +140,7 @@ ARCHITECTURE behavior OF binary_to_7seg_v2_tb IS
 							Step_Chain <= DONE;
 							first_Time := TRUE;
 						ELSE
-							binary_in <= STD_LOGIC_VECTOR(TO_UNSIGNED(binary_in_int,4));
+							binary_in <= NOT STD_LOGIC_VECTOR(TO_UNSIGNED(binary_in_int,4));
 							Step_Chain <= CNT_UP;
 							first_Time := TRUE;
 						END IF;
