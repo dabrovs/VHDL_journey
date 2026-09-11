@@ -1,0 +1,40 @@
+# ---- Init of simulation ----
+# Number of segments: 4
+# Test bit: 0
+# Data_0 in is :1010
+# Data_1 in is :1011
+# Data_2 in is :1100
+# Data_3 in is :1101
+# ---- Start of simulation ----
+# clk counter at :11111101111010000
+# next step counter :1
+# Segment select is :0000
+# Segment out is :00111111
+# clk counter at :11111101111010000
+# next step counter :2
+# Segment select is :1110
+# Segment out is :01110111
+# clk counter at :11111101111010000
+# next step counter :3
+# Segment select is :1101
+# Segment out is :01111100
+# clk counter at :11111101111010000
+# next step counter :4
+# Segment select is :1011
+# Segment out is :00111001
+# clk counter at :11111101111010000
+# next step counter :5
+# Segment select is :0111
+# Segment out is :01011110
+# clk counter at :11111101111010000
+# next step counter :6
+# Segment select is :1110
+# Segment out is :01110111
+# clk counter at :11111101111010000
+# next step counter :7
+# Segment select is :1101
+# Segment out is :01111100
+# clk counter at :11111101111010000
+# next step counter :8
+# Segment select is :1011
+# Segment out is :00111001
