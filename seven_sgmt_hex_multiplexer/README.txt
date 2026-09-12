@@ -1,0 +1,1 @@
+Wrote this as a Little helper for the remote_to_hex Project. Not tested on physical board only via test bench.

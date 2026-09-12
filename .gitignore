@@ -12,6 +12,7 @@
 !*.qpf
 !*.qsf
 !*.sdc
+!*.py
 
 # 4. Allow VHDL source code and testbenches
 !*.vhd

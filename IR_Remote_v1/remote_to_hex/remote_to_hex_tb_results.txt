@@ -1,0 +1,42 @@
+# ---- Init of simulation -----
+# All data send by IR signal: 01010100101010110011001011001101
+# Cmd send by IR signal: 10101011
+# Cmd_inv send by IR signal: 01010100
+# Address send by IR signal: 11001101
+# Address_inv send by IR signal: 00110010
+# Segment select at first time  (neg): 0000
+# Segment out at first time  (neg): 11000000
+# Expected hex code for cmd_data = AB
+# Digit 1 = A = 01110111 or 10001000(neg)
+# Digit 0 = B = 01111100 or 10000011(neg)
+# Expected hex code for addr_data = CD
+# Digit 1 = C = 00111001 or 11000110(neg)
+# Digit 0 = d = 01011110 or 10100001(neg)
+# ----- data eval count ------: 1
+# Dip switch selection is (neg): 1110
+# Segment select (neg): 1101
+# Segment out (neg): 10001000
+# Dip switch selection is (neg): 1110
+# Segment select (neg): 1110
+# Segment out (neg): 10000011
+# ----- data eval count ------: 2
+# Dip switch selection is (neg): 1110
+# Segment select (neg): 1101
+# Segment out (neg): 10001000
+# Dip switch selection is (neg): 1110
+# Segment select (neg): 1110
+# Segment out (neg): 10000011
+# ----- data eval count ------: 3
+# Dip switch selection is (neg): 1011
+# Segment select (neg): 1101
+# Segment out (neg): 11000110
+# Dip switch selection is (neg): 1011
+# Segment select (neg): 1110
+# Segment out (neg): 10100001
+# ----- data eval count ------: 4
+# Dip switch selection is (neg): 1011
+# Segment select (neg): 1101
+# Segment out (neg): 11000110
+# Dip switch selection is (neg): 1011
+# Segment select (neg): 1110
+# Segment out (neg): 10100001
